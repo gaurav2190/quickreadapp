@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.gk2190.QuickRead",
+      "sha256_cert_fingerprints": [
+        "CF:28:E9:1A:0B:68:75:21:47:31:AA:D2:24:A2:BE:0C:6F:5C:FA:0A:7B:E4:5A:74:42:AB:7C:5C:49:13:5B:5F"
+      ]
+    }
+  }
+]
