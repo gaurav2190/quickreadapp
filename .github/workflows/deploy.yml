@@ -19,8 +19,9 @@ jobs:
       - name: Prepare site
         run: |
           mkdir -p public
-          cp -r * public || true
-          # rename well-known -> .well-known
+          # copy everything except 'public' itself
+          rsync -av --exclude 'public' ./ public/
+          # rename well-known → .well-known
           mv public/well-known public/.well-known || true
 
       - name: Deploy to GitHub Pages
