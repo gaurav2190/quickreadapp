@@ -2,13 +2,39 @@
 <html>
   <head>
     <meta http-equiv="refresh" content="0; url=quickread://details/123" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickRead</title>
+    <link rel="stylesheet" href="styles.css">
     <script>
-      const path = window.location.pathname; 
-      // Example: /details/42
-      window.location.replace("quickread://" + path);
+        const path = window.location.pathname; 
+        // Example: /details/42
+      // window.location.replace("quickread://" + path);
     </script>
   </head>
   <body>
-    <p>Redirecting to QuickRead App...</p>
+    <header>
+      <h1>QuickRead</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Welcome to QuickRead</h2>
+        <p>Your daily dose of summarized news, fast and easy.</p>
+      </section>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> QuickRead. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
